@@ -9,11 +9,6 @@ import AppFooterCopyright from "./AppFooterCopyright";
 
 const socialLinks = [
   {
-    id: 1,
-    icon: <FiGlobe />,
-    url: "https://www.Haris.me/",
-  },
-  {
     id: 2,
     icon: <FiGithub />,
     url: "https://github.com/MHarisAshfaq",
@@ -26,12 +21,7 @@ const socialLinks = [
   {
     id: 4,
     icon: <FiLinkedin />,
-    url: "https://www.linkedin.com/in/MHarisAshfaq",
-  },
-  {
-    id: 5,
-    icon: <FiYoutube />,
-    url: "https://www.youtube.com/c/MHarisAshfaq",
+    url: "https://www.linkedin.com/in/muhammad-haris-ashfaq",
   },
 ];
 

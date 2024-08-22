@@ -5,6 +5,9 @@ import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import HireMeModal from "../HireMeModal";
 // import logoLight from "../../images/MH-logo.png";
 // import logoDark from "../../images/MH-logo.png";
+import LogoLight from "../../images/logo-light.png";
+import LogoDark from "../../images/logo-dark.png";
+
 import { motion } from "framer-motion";
 import Button from "../reusable/Button";
 
@@ -45,15 +48,15 @@ const AppHeader = () => {
       <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
         {/* Header menu links and small screen hamburger menu */}
         <div className="flex justify-between items-center px-4 sm:px-0">
-          {/* <div>
+          <div>
             <Link to="/">
               {activeTheme === "dark" ? (
-                <img src={logoDark} className="w-36" alt="Dark Logo" />
+                <img src={LogoDark} className="w-36" alt="Dark Logo" />
               ) : (
-                <img src={logoLight} className="w-36" alt="Dark Logo" />
+                <img src={LogoLight} className="w-36" alt="Dark Logo" />
               )}
             </Link>
-          </div> */}
+          </div>
 
           {/* Theme switcher small screen */}
           <div
@@ -147,13 +150,13 @@ const AppHeader = () => {
           >
             About Me
           </Link>
-          <Link
+          {/* <Link
             to="/contact"
             className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
             aria-label="Contact"
           >
             Contact
-          </Link>
+          </Link> */}
         </div>
 
         {/* Header right section buttons */}

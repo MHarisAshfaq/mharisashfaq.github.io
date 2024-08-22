@@ -25,7 +25,7 @@ const AppBanner = () => {
           }}
           className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
         >
-          Hi, Iam Haris
+          Hi, I'm Haris
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -37,7 +37,7 @@ const AppBanner = () => {
           }}
           className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
         >
-          A Full-Stack Developer & Technology Enthusiast
+          A Full-Stack Developer & Blockchain Enthusiast
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
@@ -69,7 +69,9 @@ const AppBanner = () => {
         className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
       >
         <img
-          src={activeTheme === "dark" ? developerLight : developerDark}
+          src={
+            "https://nextjs-tailwindcss-portfolio.vercel.app/images/developer-dark.svg"
+          }
           alt="Developer"
         />
       </motion.div>

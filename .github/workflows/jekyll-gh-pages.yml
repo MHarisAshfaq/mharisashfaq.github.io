@@ -20,6 +20,8 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
+env:
+  CI: false
 
 jobs:
   # Build job

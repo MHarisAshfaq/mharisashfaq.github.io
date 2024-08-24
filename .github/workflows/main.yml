@@ -20,6 +20,10 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: Upload Artifact to GitHub Pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./build
 
   # Deploy job
   deploy:

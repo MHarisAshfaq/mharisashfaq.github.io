@@ -25,6 +25,10 @@ jobs:
         with:
           name: github-pages # This name must match the one used in the deploy step
           path: ./build
+      - name: Remove Symlinks
+        run: find ./build -type l -exec rm -f {} \;
+      - name: List Build Directory Contents
+        run: ls -lhR ./build
 
   # Deploy job
   deploy:

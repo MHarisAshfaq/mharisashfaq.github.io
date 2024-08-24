@@ -29,6 +29,8 @@ jobs:
         run: find ./build -type l -exec rm -f {} \;
       - name: List Build Directory Contents
         run: ls -lhR ./build
+      - name: Check Build Directory Size
+        run: du -sh ./build
 
   # Deploy job
   deploy:

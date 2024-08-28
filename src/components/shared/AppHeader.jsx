@@ -14,7 +14,7 @@ import Button from "../reusable/Button";
 const AppHeader = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [activeTheme, setTheme] = useThemeSwitcher();
+  const [activeTheme, setTheme] = useThemeSwitcher("dark");
 
   function toggleMenu() {
     if (!showMenu) {
@@ -43,9 +43,9 @@ const AppHeader = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       id="nav"
-      className="sm:container sm:mx-auto"
+      className="sm:container sm:mx-auto h-6"
     >
-      <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
+      <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center">
         {/* Header menu links and small screen hamburger menu */}
         <div className="flex justify-between items-center px-4 sm:px-0">
           <div>
@@ -59,7 +59,7 @@ const AppHeader = () => {
           </div>
 
           {/* Theme switcher small screen */}
-          <div
+          {/* <div
             onClick={() => setTheme(activeTheme)}
             aria-label="Theme Switcher"
             className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
@@ -69,7 +69,7 @@ const AppHeader = () => {
             ) : (
               <FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
             )}
-          </div>
+          </div> */}
 
           {/* Small screen hamburger menu */}
           <div className="sm:hidden">
@@ -172,7 +172,7 @@ const AppHeader = () => {
           </div>
 
           {/* Theme switcher large screen */}
-          <div
+          {/* <div
             onClick={() => setTheme(activeTheme)}
             aria-label="Theme Switcher"
             className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
@@ -182,7 +182,7 @@ const AppHeader = () => {
             ) : (
               <FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
             )}
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Hire me modal */}
